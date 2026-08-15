@@ -2,37 +2,34 @@
 
 Proyecto de práctica en MySQL que modela la gestión de un gimnasio con múltiples sedes, entrenadores, especialidades, planes de entrenamiento y socios. Cubre desde el diseño del esquema relacional hasta procedimientos almacenados, funciones, triggers, eventos, particionamiento, SQL dinámico y administración de usuarios.
 
-## Proceso de normalización
-
-A continuación se muestra el proceso de normalización de los datos originales (hoja de Excel/Google Sheets) hasta llegar al modelo relacional final en 4FN.
 
 ### Datos originales (sin normalizar)
 
-![alt text](image.png)
+![Datos originales](assets/image.png)
 
 ### Primera forma normal (1FN)
 
 Eliminación de grupos repetidos y valores no atómicos.
 
-![alt text](image-1.png)
+![Primera forma normal](assets/image-1.png)
 
 ### Segunda forma normal (2FN)
 
 Eliminación de dependencias parciales respecto a la llave primaria.
 
-![alt text](image-2.png)
+![Segunda forma normal](assets/image-2.png)
 
 ### Tercera forma normal (3FN)
 
 Eliminación de dependencias transitivas.
 
-![alt text](image-3.png)
+![Tercera forma normal](assets/image-3.png)
 
 ### Cuarta forma normal (4FN)
 
 Eliminación de dependencias multivaluadas independientes. Este es el modelo final que se implementó en `00_schema.sql`.
 
-![alt text](image-4.png)
+![Cuarta forma normal](assets/image-4.png)
 
 
 ## Contenido
